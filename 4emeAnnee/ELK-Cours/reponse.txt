@@ -1,0 +1,147 @@
+PUT my_blogs/_doc/1
+{
+  "id": "1",
+  "title": "Better query execution",
+  "category": "Engineering",
+  "date":"July 15, 2015",
+  "author":{
+    "first_name": "Adrian",
+    "last_name": "Grand",
+    "company": "Elastic"
+  }
+}
+
+PUT my_blogs/_doc/2
+{
+  "id": "2",
+  "title": "The Story of Sense",
+  "date":"May 28, 2015",
+  "author":{
+    "first_name": "Boaz",
+    "last_name": "Leskes"
+  }
+}
+GET my_blogs/_doc/1
+DELETE my_blogs/_doc/2
+DELETE my_blogs
+GET my_blogs/_search
+{
+  "query": {
+    "match": {
+      "title" : "Tests de modif"
+    }
+  }
+}
+
+
+
+
+QUIZ PAGE 82 (ES-S2J2):
+
+2: 
+PUT tmp_blogs/_doc/1
+{
+  "title": "Elastic Cloud and Meltdown",
+  "publish_date": "2018-01-07T23:00:00.000Z",
+  "author": "Elastic Engineering",
+  "category": "Engineering",
+  "content": " Elastic is aware of the Meltdown and Spectre vulnerabilities...",
+  "url": "/blog/elastic-cloud-and-meltdown",
+  "locales": ["de-de","fr-fr"]
+}
+
+3: GET tmp_blogs/_mappings
+
+4:
+PUT tmp_blogs
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "publish_date": {
+          "type": "date"
+        },
+        "author": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "category": {
+          "type": "keyword"
+        },
+        "content": {
+          "type": "text"
+        },
+        "locales": {
+          "type": "keyword"
+        },
+        "title": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "url": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+5:
+GET tmp_blogs/_search
+{
+  "query": {
+    "match": {
+      "category": "engineering"
+    }
+  }
+}
+
+6: 
+"Introducing beta releases: Elasticsearch and Kibana Docker images!"
+
+GET _analyze
+{
+  "text": "Introducing beta releases: Elasticsearch and Kibana Docker images!"
+}
+
+7:
+GET _analyze
+{
+  "analyzer": "whitespace",
+  "text": "Introducing beta releases: Elasticsearch and Kibana Docker images!"
+}
+
+8:
+GET _analyze
+{
+  "analyzer": "stop",
+  "text": "Introducing beta releases: Elasticsearch and Kibana Docker images!"
+}
+
+GET _analyze
+{
+  "analyzer": "keyword",
+  "text": "Introducing beta releases: Elasticsearch and Kibana Docker images!"
+}
+
+GET _analyze
+{
+  "analyzer": "english",
+  "text": "Introducing beta releases: Elasticsearch and Kibana Docker images!"
+}

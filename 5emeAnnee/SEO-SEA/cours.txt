@@ -1,0 +1,28 @@
+TYPES DE CORRESPONDANCES :
+
+
+ 
+
+Requête large
+
+école commerce
+ 
+
+Requête large modifiée
+
++école commerce
+ 
+
+Expression exacte
+
+‘’école commerce’’
+ 
+
+Mot clé exacte
+
+[école commerce]
+ 
+
+Mots clés négatifs
+
+-gratuit

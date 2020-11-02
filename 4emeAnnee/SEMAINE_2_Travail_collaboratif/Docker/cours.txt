@@ -1,0 +1,14 @@
+SUPPRIMER 
+
+    docker container prune
+    docker image prune 
+
+TP
+    docker build -t elie91/alpine_ssh .  => Build à partir d'un dockerfile
+    docker run -it -P -d c70792fe5024
+    ssh -p 32768 root@localhost
+
+Sites
+
+    https://hadolint.github.io/hadolint/
+    https://okty.io/generator/templates

@@ -1,0 +1,98 @@
+QUI ?
+====
+
+Kidszen - Jeune startup
+SAS en cours de formation, 23 rue Charles Gounod, 92500 RUEIL MALMAISON
+
+CONTACT DE L'ENTREPRISE
+Euprhonise Shanyce
+CEO & FONDATRICE
+
+E-mail: Contact.kidszen@gmail.com
+Numéro: 06 03 39 73 63
+
+Partenaires         : Non affiché mais ouvert aux partenariat (formulaire sur le site internet).
+Cible               : Organisme et structures jeunesses.
+Phrase d'accroche   : Et si votre gestion devenait un jeu d’enfants ?
+
+
+ETUDE DE LA CONCURRENCE
+========================
+
+
+Kidizz.com  
+----------
+
+
+[+] Points positifs:
+
+    - Plus de 30 000 crèches, écoles, séjours, colos et centres de loisirs qui nous font confiance
+    - Partagez tous les documents que vous souhaitez avec les parents en deux clics.
+    - Durant les séjours, les parents peuvent envoyer des cartes aux enfants.
+    - Controlez le contenu partagé par vos équipes. Validez avant diffusion aux familles.
+    - Kidizz fonctionne en réseau. Gérez toutes vos structures avec un seul compte
+    - La messagerie vous permet d'échanger en privé avec les parents.
+    - Certifié RGPD
+
+
+[-] Points négatifs:
+
+    - 
+
+Informations supplémentaire. (VPTCS ?)
+=================================
+
+- Couleurs enfantines.
+- Visuel simple.
+- Charte graphique ? (à définir).
+- UX (délivrer de l'information de qualité).
+- Proposer un accompagnement après la mise en service.
+
+Defi-enfance
+------------
+
+[+] Points positifs:
+
+    - 25 ans d’expérience acquise au service des associations, collectivités et entreprises ont permis à L&A de devenir le logiciel de gestion le plus complet du marché
+
+[-] Points négatifs
+
+
+Question à poser
+=================
+
+- Travaillez vous avez des prestataires ?
+- Avez-vous des partenaires ?
+- Qu'est-ce que le système de pointage (avancement des choses).
+- Avez-vous une charte graphique ?
+- Comment souhaitez vous génrer du revenue ? (abonnement)
+- Système de paiement en ligne ?
+- Système d'authentification partagés ou séparés ?
+
+
+Points essentiels
+==================
+
+- Design ergonomique et simple d'accés.
+- Maitrise du langage Symfony (comme demandé + resources).
+- Maitrise du CEO (visibilité).
+
+Conseil du prof: avoir l'impression que la même personne créer la réponse.
+
+/!\ BIEN ANALYSER.
+
+Plusieurs directeurs ayant les mêmes droits.
+Prestataire cantine, transport.
+Mail interne, prestataire, collectivité
+
+Groupe par structure.
+
+Pointage
+
+Depuis une semaine en construction
+
+
+Compte utilisateur > full perm
+
+
+g

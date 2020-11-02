@@ -1,0 +1,72 @@
+
+* \? => liste les commandes PSQL
+* \h => liste les commandes SQL
+* \i FILE = exécute le script SQL du fichier FILE
+
+
+* \connect DB_NAME => utiliser la bdd DB_NAME
+* \c DB_NAME => Se connecter a la DB_NAME
+* \dt => Liste toute les tables de la bdd courante
+* \l => Liste des bdd
+* \q => quitte PSQL
+* \dv => Liste des views
+
+
+COURS : 
+
+Cours 2 => 
+
+    LIKE        => Sensible à la casse
+    ILIKE       => Insensible à la casse
+    SIMILAR TO  => Comme LIKE, mais comprend également les Regex
+    TRIM        => Retirer un espace vide : ex => select trim(both ' ' from lastname) from people;
+    CONCAT      => Concaténer 2 colonnes
+    UPPER       => Majuscules 
+    LOWER       => Minuscules
+    INITCAP     => 1er lettre de chaque mot en maj
+
+    NOW()       => Date du jour
+    EXTRAC      => SELECT extract(hour from date)
+    to_date     => String en date ex: select to_date('02112018', 'DDMMYYYY')
+    BETWEEN     => Entre deux conditions
+    IN
+    NULL
+    CASE WHEN   => Sorte de Switch 
+    ex: SELECT lastname 
+        CASE 
+            WHEN age < 18 THEN 'NOT ALLOWED'
+            WHEN age > 18 'Allowed'
+        END
+        AS authorized FROM people ORDER BY age
+
+
+Cours 3 => 
+
+    Jointures:
+        inner join  => joint deux tables si correspondance
+        right join  => favorise la table à droite , affiche ses données même si pas de 
+                      correspondance avec la table de gauche (inverse pour left join)
+        full join   => Combine left et right join (affiche tout pour les deux tables)    
+        outer       => left join, right join and full join
+        cross       => cross join (associe chaque ligne entre les deux tables)
+
+    
+    Aggrégation:
+        Réunir des valeurs entre elles:
+
+    
+    Vues:
+        créer: 
+        CREATE VIEW name AS request
+        
+        utiliser:
+        select * from view_name
+
+        Modifier:
+        Alter view name (ALTER, RENAME TO...) 
+
+
+    Cours 4 => 
+        Sous requêtes
+        Transactions
+        Trigger

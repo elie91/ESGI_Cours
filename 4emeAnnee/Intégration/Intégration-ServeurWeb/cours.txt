@@ -1,0 +1,109 @@
+1/ ***** Vocabulaire
+
+    Serveur 
+        => Machine ayant pour rôle d'envoyer des données
+        => Stabilité, logiciels, Middleware
+    
+    Infra 
+        => Endroit ou on va placer notre appli ? Partie réseau qui relie l'application
+        => Topologie: Réprésentation graphique de l'infrastructure  
+        => DevOps: Communication entre les devs et les opérations, état d'esprit
+
+
+2/ ***** Technologie
+
+    Apache/NGINX 
+        => Apache à une meilleure doc, NGINX est + performant
+           Apache gére les HTACCESS, gestion sécurité + facile
+    
+    Postfix 
+        => Permet de gérer les serveurs mails
+    
+    Bind9
+        => Serveur DNS
+
+    IPTABLES 
+        => Gestion de pare feu
+    
+    Fail2Ban
+        => Lit dans les logs, et permet de ban des adresses ip
+
+
+3/ ***** Cas pratique de mise en ligne
+    
+    Tiers Applicatif => Un service; 2 Tiers = On lie la partie client et serveur;
+    Etapes: 
+        1. Analyse de l'application et de son contexte (Analyse sur le besoin de l'application)
+        2. Choix des technos 
+        3. Topologie de l'infra (représentation graphique )
+        4. Configuration de l'infra 
+        5. Test d'accès au site
+        6. Tests haut niveau de sécurité
+
+    4. Configuration de l'infra: 
+        
+        - Document Root Apache = /var/www/html
+        
+        - Apache port 80
+        - Ne pas utiliser le root de facon générale, créer un utilisateur particulier
+        
+        - Directory, doit être suivi d'un chemin (celui du DocumentRoot) . 
+          Option AllowOverride => Est ce que j'intérpéte le .htaccess (None ou All)
+          Si on veut désactiver une option, mettre un - devant
+        
+        - Dossier site-enabled = site activés
+        - Dossier site-available = site disponibles, non activés
+        
+        - a2ensite nom_site => enable un site (dans le dossier site-enabled)
+        - desable un site
+            1 - a2dissite 
+            2 - Redirect dans le VirtualHost
+            3 - Redirect dans le HtAccess 
+        - Désactiver un module : a2dismode nom_module
+        
+        - Lorsqu'on a plusieurs sites, utiliser un DNS, qui va envoyer sur un site en fonction du nom de
+            domaine.
+            Aller dans le fichier .conf du site, et ajouter l'option ServerName : ServerName nomsite.fr
+            On peut ajouter un ServerAlias, qui va être un autre point d'entrée pour notre site
+            Reload le service
+            ( Il faut ensuite modifier les hosts de notre pc, car on est en local
+            On va renseigner les noms de domaines, il va ensuite les remplacer par le nom de notre site )
+
+        - option Indexe => Rentre accessible ou non l'arborescence du site
+        
+        - S'il n'y a pas de fichier php.ini, apache ne va donc pas le trouver et charger la config de php par défaut
+        
+        - Voir les logs sous Apache: 
+            ErrorLog "/home/nom_site/logs/error.log" (dossier custom)
+        
+        - Pour activer le Rewrite dans le htaccess, il faut activer le module a2enmod rewrite 
+
+
+    Récap Apache:
+
+        - fichier apache2.conf dans global
+        - Chaque site possède un fichier XXX-site.conf, dans le dossier site-available
+        - Apache va lire la config d'un site dans site-enabled , qui est relié au dossier site-available
+        - Si plusieurs sites, mettre les DNS dans les fichiers site-available/site.conf
+        - Si local, configurer les hosts
+
+    
+    6. Tests haut niveau de sécurité
+        - HTTPS 
+        - Cloisonnement des BDDS (Mettre sur un serveur à part, un utilisateur par BDD)
+        - Contrôle d'indexation du DocumentRoot (option Indexe, ne jamais laisser l'arborescence visible)
+        - Droit accordés aux utilisateurs (Serv, BDD) (veiller à ce que le user crée contienne les droits suffisants et non plus)
+        - Accès SSH
+        - CloudFlare
+        - IPTABLES
+        - Fail2Ban
+        
+
+4/ ***** TP
+
+
+5/ ***** Approche Cloud
+
+
+
+6/ ***** Conclusion   

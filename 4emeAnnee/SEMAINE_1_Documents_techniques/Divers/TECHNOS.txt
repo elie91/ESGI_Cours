@@ -1,0 +1,23 @@
+3 niveaux
+ - authentification
+ - inscription, connexion
+ - unicité , cryptage, double vérif
+
+Séparé par des tabulation, sur 3 niveaux
+
+Technos : 
+    Symfony + Twig
+    Tests unitaire et fonctionnel
+    Intégration continue ? Jenkins ?
+    Blackfire pour test de performances ? 
+
+Infrastructure: 
+    Docker 
+    Apache
+    mySQL 
+
+Divers: 
+    GitLab
+    Trello
+
+
