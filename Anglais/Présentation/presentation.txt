@@ -10,9 +10,30 @@ I will begin by explaining what virtual reality is, as well as augmented reality
 Then we’ll see where those technologies are being used
 We will conclude the presentation by discussing the impact these technologies can have on our world and society
 
-Virtual reality is the fact of immersing a user in a virtual environment, totally excluding from his field of vision the physical world
-This virtual environment can be anything, like for example a fantasy world, an airplane, space etc.The user finds himself immersed in this virtual world
 
-An example of a game using augmented reality is the Pokemon Go game, which met with great success during its release, 
+So, what is virtual reality ?
+Virtual reality is the fact of immersing a user in a virtual environment, totally excluding from his field of vision the physical world.
+This virtual environment can be anything, like for example a fantasy world, an airplane, space etc.The user finds himself immersed in this virtual world
+This is possible using a virtual reality headset, such as HTC Vive, Oculus Rift or Google Cardboard headphones
+These headset are completely opaque, blocking your environment when you wear them. If you put them on when they’re off, you might think you’re blindfolded.
+
+
+Whereas virtual reality replaces your vision, augmented reality adds to it.
+The technology is designed for completely free movement while projecting images over whatever you look at.
+Augmented reality also requires a device, such as Microsoft HoloLen smart glasses, or even mobile phones, to project information into the real world.
+An example of a game using augmented reality is the Pokemon Go game, which met great success during its release, 
 which use your phone's camera to track your surroundings and overlay additional information on top of it, on the screen. 
 Pokemon Go projects a Pokemon on your screen, on top of whatever the camera is looking at
+
+
+These two technologies have been mainly used until now for video games, offering video games in VR, requiring the purchase of a specific helmet, and games in AR with Pokemon Go for example.
+VR has also been used for training, as with VirtualShip, a simulation software used to train U.S. Navy, Army, and Coast Guard ship captains
+Both VR and AR have enormous potential in training, entertainment, education, marketing, and even rehabilitation after an injury. Either could be used to train doctors to do surgery, offer museum-goers a deeper experience, enhance theme parks, or even enhance marketing
+
+
+Virtual reality and augmented reality accomplish two very different things in two very different ways, despite the similar designs of the devices themselves. 
+VR replaces reality, taking you somewhere else. AR adds to reality, projecting information on top of what you're already seeing. 
+They're both powerful technologies that have yet to make their mark with consumers, but show a lot of promise.
+They can completely change how we use computers in the future, but whether one or both will succeed is anyone's guess right now.
+
+Thank you for listening
